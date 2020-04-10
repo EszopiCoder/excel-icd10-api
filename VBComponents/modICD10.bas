@@ -28,7 +28,7 @@ Public Function getICDdesc(strICD As String) As String
     JSON.Parse sJSONString, vJSON, sState
     ' Check response validity
     If sState = "Error" Then
-        MsgBox "Invalid JSON response", vbInformation
+        getICDdesc = "Invalid JSON response"
         Exit Function
     End If
     
