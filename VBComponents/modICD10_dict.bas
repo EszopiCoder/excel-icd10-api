@@ -225,7 +225,7 @@ Public Sub MsgBoxDict(objDict As Object)
         strMsg = strMsg & k & vbTab & objDict(k) & vbNewLine
     Next
     ' Show log
-    formLog.Caption = "Error Log: " & objDict.Count & " result(s)"
+    formLog.Caption = "Log: " & objDict.Count & " result(s)"
     formLog.txtLog.Text = "[" & Now & "]" & vbNewLine & strMsg & "(end of log)"
     formLog.Show vbModeless
     
