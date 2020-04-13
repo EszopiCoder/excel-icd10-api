@@ -217,5 +217,7 @@ Private Sub btnPreview_Click()
         Exit Sub
     End If
     ' Show preview
-    Call MsgBoxDict(ICD)
+    Call MsgBoxDict(ICD, True)
+    If log.Count > 0 Then Call MsgBoxDict(log)
+                              
 End Sub
