@@ -131,7 +131,7 @@ Private Sub btnSearch_Click()
     Call PrintSheet(ICD, ActiveWorkbook.Worksheets(cboSheet.ListIndex + 1))
     ' Show completion message and log
     formLog.Hide
-    MsgBox "Completed: " & ICD.Count & " results returned"
+    MsgBox "Completed: " & ICD.Count & " results returned", vbInformation
     If log.Count > 0 Then Call MsgBoxDict(log)
     
 End Sub
