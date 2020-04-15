@@ -16,13 +16,15 @@
 Download 'ICD10 API.xlsm'
 
 
-The current file has one function and three macros:
-- `getICDdesc()` is a function that searches an ICD description given an ICD code
-- `OpenQueryForm` is a sub that opens a userform which supports searching multiple terms (combination of codes and names)
+The current file has one function and four macros:
+- `getICDdesc(ICD)` is a function that returns an ICD description given an ICD code
+- `OpenQueryForm` is a sub that opens a userform which supports searching multiple terms (combination of codes and names; see images)
+- `OpenSheetQuery` is a sub that preloads the active selection of criteria into a userform which supports searching multiple terms (combination of codes and names; see images)
 - `printICDbyCode` is a sub that searches a single ICD code
 - `printICDbyName` is a sub that searches a singe ICD description
 ## Sample Images
 <img src="Images/sheetICD.PNG">
+<img src="Images/sheetQueryICD.PNG">
 <img src="Images/formICD.PNG">
 <img src="Images/logICD.PNG">
 <img src="Images/previewICD.PNG">
